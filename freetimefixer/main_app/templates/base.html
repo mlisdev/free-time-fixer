@@ -2,7 +2,6 @@
 
 <!DOCTYPE html>
 <html lang="en">
-
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,9 +9,7 @@
         <link rel="stylesheet" href="css/style.css">
         <title>Free Time Fixer</title>
     </head>
-
     <body>
-
         <nav class="navbar" role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
                 <a class="navbar-item" href="">
@@ -25,15 +22,22 @@
                     <span aria-hidden="true"></span>
                 </a>
             </div>
-
             <div class="navbar-end is-spaced">
-                <div class="navbar-item">
+                <div class="navbar-item">   
                     <a href="" class="navbar-item">My List</a>
                     <a href="" class="navbar-item">Add Activies</a>
                     <a href="" class="navbar-item">Go Home</a>
+                    <a href="" class="navbar-item">Log Out</a>
                     </a>
                 </div>
             </div>
             </div>
             </div>
         </nav>
+<main class="container">
+            {% block content %}
+            {% endblock %}
+        </main>
+        </div>
+    </body>
+</html>
