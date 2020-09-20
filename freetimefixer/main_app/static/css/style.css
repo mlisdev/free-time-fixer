@@ -1,0 +1,22 @@
+.navbar { 
+  background-color: #e75b10; 
+}
+
+.navbar-item {
+  margin-left: 60px;
+}
+
+.navbar-item a{ 
+  color: #fff; 
+}
+.navbar-item a:hover { 
+  color: #007872; 
+}
+
+.card-header { 
+  background-color: #d6d1ce; 
+}
+
+th { 
+  background-color: #d6d1ce;
+}
