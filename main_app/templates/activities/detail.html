@@ -26,7 +26,7 @@
             Not done!
         {% endif %}
         </td>
-        <td><button class="button is-danger is-light">Delete Item</button></td>
+        <td><a href="{% url 'activities_delete' activity.id %}"><button class="button is-danger is-light">Delete Item</button></a></td>
 {% endfor %}
 </tr>
 </table>
