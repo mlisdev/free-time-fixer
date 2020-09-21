@@ -1,10 +1,9 @@
 from django.db import models
 from django.contrib.auth.models import User
-# what is this? 
-from django.utils.translation import gettext_lazy as _
+
 
 # Create your models here.
-class Activities(models.Model):
+class Activity(models.Model):
     class TimeChoices(models.IntegerChoices):
         FIFTEEN = 15 
         HALFHOUR = 30
@@ -24,5 +23,11 @@ class Activities(models.Model):
     category = models.CharField(max_length=100, choices=Category.choices)
     finished = models.BooleanField()
     user = models.ForeignKey(User, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return self.name
+    
+    def get_absolute_url(self):
+        return reverse('detail', kwargs={'activity_id': self.id})
     
 
