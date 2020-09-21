@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1>All Activities</h1>
+{% for activity in activities  %}
+<table class="table is-bordered is-fullwidth">
+     <thead>
+         <tr>
+            <th>Time Commitment</th>
+            <th>Name of Activity</th>
+            <th>Category</th>
+            <th>Notes</th>
+            <th>Completed?</th>
+            <th>Remove Item</th>
+        </tr>
+    </thead>
+        <tr>
+        <td>{{ activity.timeChoices }}</td>
+        <td>{{ activity.name }}</td>
+        <td>{{ activity.category }}</td>
+        <td>{{ activity.description }} </td>
+        <td>{% if activity.finished %} 
+            Done! 
+        {{ else }} 
+            Not done!
+        {% endif %}
+        </td>
+        <td><button class="button is-danger is-light">Delete Item</button></td>
+        </tr>
+    </table>
+
+{% endfor %}
+
+{% endblock %}
