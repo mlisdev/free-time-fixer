@@ -22,7 +22,7 @@ class Activity(models.Model):
         PLAY = 'Play'
     # added max length 
     category = models.CharField(max_length=100, choices=Category.choices)
-    finished = models.BooleanField()
+    finished = models.BooleanField(default=False)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
 
     def __str__(self):
