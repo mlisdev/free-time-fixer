@@ -2,7 +2,7 @@
 {% block content %}
 
 <h1>All Activities</h1>
-{% for activity in activities  %}
+
 <table class="table is-bordered is-fullwidth">
      <thead>
          <tr>
@@ -14,8 +14,9 @@
             <th>Remove Item</th>
         </tr>
     </thead>
+    {% for activity in activities  %}
         <tr>
-        <td>{{ activity.timeChoices }}</td>
+        <td>{{ activity.timeChoices }} minutes</td>
         <td>{{ activity.name }}</td>
         <td>{{ activity.category }}</td>
         <td>{{ activity.description }} </td>
@@ -26,9 +27,8 @@
         {% endif %}
         </td>
         <td><button class="button is-danger is-light">Delete Item</button></td>
-        </tr>
-    </table>
-
 {% endfor %}
+</tr>
+</table>
 
 {% endblock %}
