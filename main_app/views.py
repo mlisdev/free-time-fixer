@@ -21,10 +21,10 @@ def activities_index(request):
     return render(request, 'activities/index.html')
 
 @login_required
-def activities_detail(request, activity_id):
-    activity = Activity.objects.get(id=activity_id)
+def activities_detail(request):
+    activities = Activity.objects.filter(user=request.user)
     return render(request, 'activities/detail.html', {
-        'activity': activity
+        'activities': activities
     })
 
 def about(request):
