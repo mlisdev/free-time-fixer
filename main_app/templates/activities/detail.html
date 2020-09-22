@@ -1,8 +1,16 @@
 {% extends 'base.html' %}
 {% block content %}
 
-<h1>All Activities</h1>
-
+<div class="column is-two-quarters">
+  <div class="card mt-4">
+    <header class="card-header">
+      <p class="card-header-title">
+      All My Activities
+      </p>
+    </header>
+    <div class="card-content">
+      <div class="content">
+        <main class="container">
 <table class="table is-bordered is-fullwidth">
      <thead>
          <tr>
@@ -26,7 +34,8 @@
             Not done!
         {% endif %}
         </td>
-        <td><a href="{% url 'activities_delete' activity.id %}"><button class="button is-danger is-light">Delete Item</button></a></td>
+        <td>
+        <a href="{% url 'activities_delete' activity.id %}"><button class="button is-danger is-light">Delete Item</button></a></td>
 {% endfor %}
 </tr>
 </table>

@@ -1,7 +1,16 @@
 {% extends 'base.html' %}
 {% block content %}
 
-<h2>Login</h2>
+<div class="column is-two-quarters">
+  <div class="card mt-4">
+    <header class="card-header">
+      <p class="card-header-title">
+      Login
+      </p>
+    </header>
+    <div class="card-content">
+      <div class="content">
+        <main class="container">
 
 <form method="post" action="{% url 'login' %}">
     {% csrf_token %}

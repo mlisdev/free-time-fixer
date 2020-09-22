@@ -25,6 +25,7 @@ class ActivityDelete(LoginRequiredMixin, DeleteView):
 def home(request):
   return render(request, 'home.html')
 
+@login_required
 def activities_index(request):
     return render(request, 'activities/index.html')
 

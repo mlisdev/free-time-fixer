@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+
+<div class="column is-two-quarters">
+    <div class="card mt-4">
+        <header class="card-header">
+            <p class="card-header-title">
+                About Team Skeletonic
+            </p>
+        </header>
+        <div class="card-content">
+        <h3>We're a 3 person team in the General Assembly Software Engineering Immersion.</h3>
+         <br>
+        <br>
+            <div class="content">
+            
+                <main class="container mx-4">
+                    <article class="media">
+                        <figure class="media-left">
+                            <p class="image is-128x128">
+                                <img src="{% static 'img/colin.jpeg' %}">
+                            </p>
+                        </figure>
+                        <div class="media-content">
+                            <div class="content">
+                                <p>
+                                    <strong>Colin MacDonald</strong> <small></small>
+                                    <br>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu
+                                    pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis
+                                    feugiat facilisis.
+                                </p>
+                            </div>
+                    </article>
+                    <article class="media">
+                        <figure class="media-left">
+                            <p class="image is-128x128">
+                                <img src="{% static 'img/keenan.jpg' %}">
+                            </p>
+                        </figure>
+                        <div class="media-content">
+                            <div class="content">
+                                <p>
+                                    <strong>Keenan Hillerbrand</strong> <small></small>
+                                    <br>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu
+                                    pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis
+                                    feugiat facilisis.
+                                </p>
+                            </div>
+                    </article>
+                    <article class="media">
+                        <figure class="media-left">
+                            <p class="image is-128x128">
+                                <img src="{% static 'img/steph.jpg' %}">
+                            </p>
+                        </figure>
+                        <div class="media-content">
+                            <div class="content">
+                                <p>
+                                    <strong>Stephanie Rinehart</strong> <small></small>
+                                    <br>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu
+                                    pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis
+                                    feugiat facilisis.
+                                </p>
+                            </div>
+                    </article>
+
+                    {% endblock %}
