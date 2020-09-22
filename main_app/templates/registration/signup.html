@@ -1,14 +1,23 @@
 {% extends 'base.html' %}
 {% block content %}
 
-<h1>Sign Up</h1>
+<div class="column is-two-quarters">
+  <div class="card mt-4">
+    <header class="card-header">
+      <p class="card-header-title">
+        Sign Up
+      </p>
+    </header>
+    <div class="card-content">
+      <div class="content">
+        <main class="container">
 
-{% if error_message %}<p class="red-text">{{ error_message }}</p>{% endif %}
+          {% if error_message %}<p class="red-text">{{ error_message }}</p>{% endif %}
 
-<form method="post" action="{% url 'signup' %}">
-  {% csrf_token %}
-  {{ form.as_p }}
-  <input type="submit" class="button is-rounded is-warning" value="signup">
-</form>
+          <form method="post" action="{% url 'signup' %}">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <input type="submit" class="button is-rounded is-warning" value="signup">
+          </form>
 
-{% endblock %}
+          {% endblock %}

@@ -1,13 +1,22 @@
 {% extends 'base.html' %}
 
 {% block content %}
-  <h1>Delete Activity </h1>
+<div class="column is-two-quarters">
+  <div class="card mt-4">
+    <header class="card-header">
+      <p class="card-header-title">
+      Delete Activity
+      </p>
+    </header>
+    <div class="card-content">
+      <div class="content">
+        <main class="container">
 
   <h4>Are you sure you want to delete <span class="teal-text">{{ object.name }}</span>?</h4>
 
   <form action="" method="POST">
     {% csrf_token %}
-    <input type="submit" value="Yes - Delete!" class="btn">
-    <a href="{% url 'detail' %}">Cancel</a>
+    <input type="submit" value="Yes - Delete!" class="button is-danger is-light mx-4"> 
+    <a href="{% url 'detail' %}"><button class="button is-light mx-4">Cancel</button></a>
   </form>
 {% endblock %}
