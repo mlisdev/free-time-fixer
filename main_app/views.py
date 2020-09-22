@@ -5,6 +5,7 @@ from django.contrib.auth import login
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth.forms import UserCreationForm
+from .filters import ActivityFilter
 # Create your views here.
 
 class ActivityCreate(LoginRequiredMixin, CreateView):
@@ -52,3 +53,8 @@ def signup(request):
   form = UserCreationForm()
   context = {'form': form, 'error_message': error_message}
   return render(request, 'registration/signup.html', context)
+
+def search(request):
+    a = ActivityFilter(request.GET, queryset=Activity.objects.all())
+    print('hello world', a)
+    return render(request, 'search.html', {'filter': a})

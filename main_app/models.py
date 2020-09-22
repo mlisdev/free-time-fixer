@@ -28,7 +28,7 @@ class Activity(models.Model):
     def __str__(self):
         return self.name
     
-    # def get_absolute_url(self):
-    #     return reverse('detail', kwargs={'activities_id': self.id})
+    class Meta:
+        ordering = ['timeChoices']
     
 
