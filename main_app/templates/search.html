@@ -1,6 +1,15 @@
 {% extends 'base.html' %}
-
 {% block content %}
+<div class="column is-two-quarters">
+  <div class="card mt-4">
+    <header class="card-header">
+      <p class="card-header-title">
+        Add An Activity
+      </p>
+    </header>
+    <div class="card-content">
+      <div class="content">
+        <main class="container">
 <center> 
 <form method="GET" class="form is-medium">
     {{ filter.form.as_p }}
@@ -26,7 +35,4 @@
             {% endfor %}
         </tr>
     </table>
-
-
-
     {% endblock %}

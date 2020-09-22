@@ -11,3 +11,7 @@ class ActivityFilter(django_filters.FilterSet):
             'category': ['exact'],
             'timeChoices': ['lte']
         }
+
+
+
+        

@@ -54,7 +54,8 @@ def signup(request):
   context = {'form': form, 'error_message': error_message}
   return render(request, 'registration/signup.html', context)
 
+@login_required
 def search(request):
-    a = ActivityFilter(request.GET, queryset=Activity.objects.all())
+    a = ActivityFilter(request.GET, queryset=Activity.objects.filter(user=request.user))
     print('hello world', a)
     return render(request, 'search.html', {'filter': a})
