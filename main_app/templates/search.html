@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<center> 
+<form method="GET" class="form is-medium">
+    {{ filter.form.as_p }}
+   <button class="button is-light" type="submit">Search</button>
+</form>
+</center>
+<br />
+    <table class="table is-bordered is-fullwidth">
+        <thead>
+            <tr>
+                <th>Time Commitment</th>
+                <th>Name of Activity</th>
+                <th>Category</th>
+                <th>Notes</th>
+            </tr>
+        </thead>
+        {% for activity in filter.qs %}
+        <tr>
+            <td>{{ activity.timeChoices }} minutes</td>
+            <td>{{ activity.name }}</td>
+            <td>{{ activity.category }}</td>
+            <td>{{ activity.description }} </td>
+            {% endfor %}
+        </tr>
+    </table>
+
+
+
+    {% endblock %}
