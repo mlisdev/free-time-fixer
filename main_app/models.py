@@ -17,10 +17,10 @@ class Activity(models.Model):
     name = models.CharField(max_length=100)
     description = models.TextField(max_length=250)
     class Category(models.TextChoices):
-        WATCH = 'Watch'
-        READ = 'Read'
-        FITNESS = 'Fitness'
-        PLAY = 'Play'
+        WATCH = 'Watch', _('Watch Something') 
+        READ = 'Read',_('Read Something') 
+        FITNESS = 'Fitness', _('Something Active') 
+        PLAY = 'Play', _('Play Something') 
     # added max length 
     category = models.CharField(max_length=100, choices=Category.choices)
     finished = models.BooleanField(default=False)

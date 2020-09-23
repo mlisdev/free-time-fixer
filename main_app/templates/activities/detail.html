@@ -5,39 +5,44 @@
   <div class="card mt-4">
     <header class="card-header">
       <p class="card-header-title">
-      All My Activities
+        All My Activities
       </p>
     </header>
     <div class="card-content">
       <div class="content">
         <main class="container">
-<table class="table is-bordered is-fullwidth">
-     <thead>
-         <tr>
-            <th>Time Commitment</th>
-            <th>Name of Activity</th>
-            <th>Category</th>
-            <th>Notes</th>
-            <th>Completed?</th>
-            <th>Remove Item</th>
-        </tr>
-    </thead>
-    {% for activity in activities  %}
-        <tr>
-        <td>{{ activity.timeChoices }} minutes</td>
-        <td>{{ activity.name }}</td>
-        <td>{{ activity.category }}</td>
-        <td>{{ activity.description }} </td>
-        <td>{% if activity.finished %} 
-            Done! 
-        {{ else }} 
-            Not done!
-        {% endif %}
-        </td>
-        <td>
-        <a href="{% url 'activities_delete' activity.id %}"><button class="button is-danger is-light">Delete Item</button></a></td>
-{% endfor %}
-</tr>
-</table>
+          {% if activities.count %}
+          <table class="table is-bordered is-fullwidth">
+            <thead>
+              <tr>
+                <th>Time Commitment</th>
+                <th>Name of Activity</th>
+                <th>Category</th>
+                <th>Notes</th>
+                {% comment %} <th>Completed?</th> {% endcomment %}
+                <th>Remove Item</th>
+              </tr>
+            </thead>
+            {% for activity in activities  %}
+            <tr>
+              <td>{{ activity.timeChoices }} minutes</td>
+              <td>{{ activity.name }}</td>
+              <td>{{ activity.category }}</td>
+              <td>{{ activity.description }} </td>
+              {% comment %} <td>{% if activity.finished %}
+                Done!
+                {{ else }}
+                Not done!
+                {% endif %}
+              </td> {% endcomment %}
+              <td>
+                <a href="{% url 'activities_delete' activity.id %}"><button class="button is-danger is-light">Delete
+                    Item</button></a></td>
+          {% endfor %}
+            </tr>
+          </table>
+            {% else %}
+          <h5>No Activities. Try <a href="{% url 'activities_create' %}">adding some!</a></h5>
+          {% endif %}
 
-{% endblock %}
+          {% endblock %}
