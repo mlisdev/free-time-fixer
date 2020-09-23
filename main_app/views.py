@@ -56,6 +56,8 @@ def signup(request):
 
 @login_required
 def search(request):
-    a = ActivityFilter(request.GET, queryset=Activity.objects.filter(user=request.user))
-    print('hello world', a)
+    a = ActivityFilter(request.GET, queryset=Activity.objects.filter(user=request.user).order_by('?'))
+  
+    # entry_list = list(Activity.objects.filter(user=request.user))
+    print('SHIT', a)
     return render(request, 'search.html', {'filter': a})
