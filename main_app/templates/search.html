@@ -4,35 +4,39 @@
   <div class="card mt-4">
     <header class="card-header">
       <p class="card-header-title">
-        Add An Activity
+        Got Free Time? Find an Activity!
       </p>
     </header>
     <div class="card-content">
       <div class="content">
         <main class="container">
-<center> 
-<form method="GET" class="form is-medium">
-    {{ filter.form.as_p }}
-   <button class="button is-light" type="submit">Search</button>
-</form>
-</center>
-<br />
-    <table class="table is-bordered is-fullwidth">
-        <thead>
-            <tr>
+          <center>
+            <form method="GET" class="form is-medium">
+              {{ filter.form.as_p }}
+              <button class="button is-light" type="submit">Search</button>
+            </form>
+          </center>
+          <br />
+          {% if anything.count %}
+          <table class="table is-bordered is-fullwidth">
+            <thead>
+              <tr>
                 <th>Time Commitment</th>
                 <th>Name of Activity</th>
                 <th>Category</th>
                 <th>Notes</th>
+              </tr>
+            </thead>
+            {% for activity in anything %}
+            <tr>
+              <td>{{ activity.timeChoices }} minutes</td>
+              <td>{{ activity.name }}</td>
+              <td>{{ activity.category }}</td>
+              <td>{{ activity.description }} </td>
+              {% endfor %}
             </tr>
-        </thead>
-        {% for activity in anything %}
-        <tr>
-            <td>{{ activity.timeChoices }} minutes</td>
-            <td>{{ activity.name }}</td>
-            <td>{{ activity.category }}</td>
-            <td>{{ activity.description }} </td>
-            {% endfor %}
-        </tr>
-    </table>
-    {% endblock %}
+          </table>
+          {% else %}
+          <h5>No Activities. Try <a href="{% url 'activities_create' %}">adding some!</a></h5>
+          {% endif %}
+          {% endblock %}
