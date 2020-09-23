@@ -47,7 +47,7 @@ def signup(request):
     if form.is_valid():
       user = form.save()
       login(request, user)
-      return redirect('index')
+      return redirect('detail')
     else:
       error_message = 'Invalid sign up - try again'
   form = UserCreationForm()
@@ -57,7 +57,7 @@ def signup(request):
 @login_required
 def search(request):
     a = ActivityFilter(request.GET, queryset=Activity.objects.filter(user=request.user).order_by('?'))
-  
+    b = a.qs[:1]
     # entry_list = list(Activity.objects.filter(user=request.user))
-    print('SHIT', a)
-    return render(request, 'search.html', {'filter': a})
+    print('SHIT', b)
+    return render(request, 'search.html', {'filter': a, 'anything': b})
