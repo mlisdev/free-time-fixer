@@ -9,9 +9,9 @@ The **Free Time Fixer** catalogs a list of activities that you can contribute to
 
 ## The App
 
-![Something](https://files.slack.com/files-pri/T0351JZQ0-F01C1D2DBGQ/screen_shot_2020-09-24_at_11.50.09_am__2_.png)
-![Activity List](https://files.slack.com/files-pri/T0351JZQ0-F01B4RLTBQW/screen_shot_2020-09-24_at_11.54.00_am__2_.png)
-![Watch Something](https://files.slack.com/files-pri/T0351JZQ0-F01BBHP2ZRQ/screen_shot_2020-09-24_at_11.54.44_am__2_.png)
+![Something](/images/homepageftf.png)
+![Activity List](/images/showftf.png)
+![Watch Something](/images/searchftf.png)
 
 
 
