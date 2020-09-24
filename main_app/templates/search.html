@@ -12,31 +12,30 @@
         <main class="container">
           <center>
             <form method="GET" class="form is-medium">
-              {{ filter.form.as_p }}
+              {{ filter.form.as_p}}
               <button class="button is-light" type="submit">Search</button>
             </form>
           </center>
           <br />
+          <hr>
           {% if anything.count %}
-          <table class="table is-bordered is-fullwidth">
-            <thead>
-              <tr>
-                <th>Time Commitment</th>
-                <th>Name of Activity</th>
-                <th>Category</th>
-                <th>Notes</th>
-              </tr>
-            </thead>
-            {% for activity in anything %}
-            <tr>
-              <td>{{ activity.timeChoices }} minutes</td>
-              <td>{{ activity.name }}</td>
-              <td>{{ activity.category }}</td>
-              <td>{{ activity.description }} </td>
-              {% endfor %}
-            </tr>
-          </table>
-          {% else %}
-          <h5>No Activities. Try <a href="{% url 'activities_create' %}">adding some!</a></h5>
-          {% endif %}
-          {% endblock %}
+          <div class="box">
+            <div class="content">
+              {% for activity in anything %}
+              <p class="has-text-centered">
+              You have <strong>{{ activity.timeChoices }} minutes</strong> and you want to
+              <strong>{{ activity.category }}</strong></p><br />
+              <h4 class="mt-4">You Should</h5>
+                <ul>
+                  <li><strong>Activity Name:</strong> {{ activity.name }}</li>
+                  <li><strong>Description:</strong> {{ activity.description }}</li>
+                </ul>
+                {% endfor %}
+            {% else %}
+            <div class="box">
+            <div class="content">
+            No Activities. Try <a href="{% url 'activities_create' %}">adding some!</a>
+            {% endif %}
+          </div>
+      </div>
+      {% endblock %}
