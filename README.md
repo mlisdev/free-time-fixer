@@ -16,16 +16,27 @@ The **Free Time Fixer** catalogs a list of activities that you can contribute to
 
 
 ## Technologies Used
-Python, Django, Bulma, CSS, HTML, PyPA
+- Python
+- Django 
+- Bulma 
+- CSS
+- HTML
+- PyPA
 
 ## Heroku Deployment
 
 [**Click here to check it out**](https://freetime-fixer.herokuapp.com/)
 
 ## Extra, Extra, Read All About It
-[**Pitch Deck**](https://docs.google.com/presentation/d/1TJdsWpqXyN9X_6IBwjJ95oObiH0mwf_7xueDqma3jkw/edit#slide=id.gcb9a0b074_1_0)
+[**Pitch Deck**](https://docs.google.com/presentation/d/1TJdsWpqXyN9X_6IBwjJ95oObiH0mwf_7xueDqma3jkw/edit#slide=id.gcb9a0b074_1_0)  
+
 [**Trello Board**](https://trello.com/b/805Ec9Hv/free-time-fixer)
 
+## Icebox
+- Ability to set an activity to "done" once it's been completed (ie: a show has been watched).
+- Ability to use the site to have a public, random activity suggested to me, even if I don't have an account.
+- Ability to use the site to have a public, random activity suggested to me, even if I don't have an account.
+- Ability to set some activities to private.
 
 ### Notes From Team Members
 
