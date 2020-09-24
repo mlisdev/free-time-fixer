@@ -38,15 +38,15 @@ The **Free Time Fixer** catalogs a list of activities that you can contribute to
 - Ability to use the site to have a public, random activity suggested to me, even if I don't have an account.
 - Ability to set some activities to private.
 
-### Notes From Team Members
+### 100% Actual Reviews
 
-| Stephanie |  My favorite video game growing up was Jumpstart: 3rd Grade |
+| Stephanie | I give this app a 13/10 |
 |-----------|---|  
 
-| Keenan | My favorite video game growing up was anything sid meier's |
+| Keenan | Free Time Fixer not only allowed me to escape the grey tedium that is my daily life, it also realigned my chakra, solved the NYT sunday crossword, and got me 10 matches on Tinder|
 |--------|---|
 
-| Colin |  My favorite video game growing up was backyard baseball |
+| Colin |  Switching to Free Time Fixer saved me 15% on my car insurance.|
 |-------|---|
 
 
