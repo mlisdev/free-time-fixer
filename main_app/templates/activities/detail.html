@@ -19,7 +19,6 @@
                 <th>Name of Activity</th>
                 <th>Category</th>
                 <th>Notes</th>
-                {% comment %} <th>Completed?</th> {% endcomment %}
                 <th>Remove Item</th>
               </tr>
             </thead>
@@ -29,12 +28,6 @@
               <td>{{ activity.name }}</td>
               <td>{{ activity.category }}</td>
               <td>{{ activity.description }} </td>
-              {% comment %} <td>{% if activity.finished %}
-                Done!
-                {{ else }}
-                Not done!
-                {% endif %}
-              </td> {% endcomment %}
               <td>
                 <a href="{% url 'activities_delete' activity.id %}"><button class="button is-danger is-light">Delete
                     Item</button></a></td>

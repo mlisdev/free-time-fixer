@@ -21,8 +21,8 @@ class Activity(models.Model):
         READ = 'Read',_('Read Something') 
         FITNESS = 'Fitness', _('Something Active') 
         PLAY = 'Play', _('Play Something') 
-    # added max length 
     category = models.CharField(max_length=100, choices=Category.choices)
+    # Finished is Icebox
     finished = models.BooleanField(default=False)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
 

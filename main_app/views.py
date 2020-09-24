@@ -6,7 +6,7 @@ from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth.forms import UserCreationForm
 from .filters import ActivityFilter
-# Create your views here.
+
 
 class ActivityCreate(LoginRequiredMixin, CreateView):
     model = Activity
@@ -58,6 +58,4 @@ def signup(request):
 def search(request):
     a = ActivityFilter(request.GET, queryset=Activity.objects.filter(user=request.user).order_by('?'))
     b = a.qs[:1]
-    # entry_list = list(Activity.objects.filter(user=request.user))
-    print('SHIT', b)
     return render(request, 'search.html', {'filter': a, 'anything': b})
