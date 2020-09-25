@@ -35,7 +35,7 @@ The **Free Time Fixer** catalogs a list of activities that you can contribute to
 ## Icebox
 - Ability to set an activity to "done" once it's been completed (ie: a show has been watched).
 - Ability to use the site to have a public, random activity suggested to me, even if I don't have an account.
-- Ability to use the site to have a public, random activity suggested to me, even if I don't have an account.
+- Ablility to toggle between private created and public activities.
 - Ability to set some activities to private.
 
 ### 100% Actual Reviews
