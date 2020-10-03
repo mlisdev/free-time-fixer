@@ -18,7 +18,7 @@ Scrum Master, Designer
 
 The **Free Time Fixer** catalogs a list of activities that you can contribute to. Then based on your selections, we return a suggestion for what you can do during your free time.
 
-##Screenshots
+## Screenshots
 
 ![Something](/images/homepageftf.png)
 ![Activity List](/images/showftf.png)
