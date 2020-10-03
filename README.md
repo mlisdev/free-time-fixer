@@ -17,14 +17,14 @@ Scrum Master, Designer
 
 The **Free Time Fixer** catalogs a list of activities that you can contribute to. Then based on your selections, we return a suggestion for what you can do during your free time.
 
-## Screenshots
+##Screenshots
 
 ![Something](/images/homepageftf.png)
 ![Activity List](/images/showftf.png)
 ![Watch Something](/images/searchftf.png)
 
 <hr>
-### 100% Actual Reviews
+###100% Actual Reviews
 
 | Stephanie | I give this app a 13/10 |
 |-----------|---|  
@@ -36,7 +36,8 @@ The **Free Time Fixer** catalogs a list of activities that you can contribute to
 |-------|---|
 
 <hr>
-## Technologies Used
+
+##Technologies Used
 - HTML
 - CSS 
 - Bulma CSS Framework
@@ -44,19 +45,21 @@ The **Free Time Fixer** catalogs a list of activities that you can contribute to
 - Django 
 - PostgreSQL
 - Heroku
-<hr> 
-## Heroku Deployment
+<hr>
+
+##Heroku Deployment
 
 [**Deployed app on Heroku**](https://freetime-fixer.herokuapp.com/)
 
 <hr>
-## Extra, Extra, Read All About It
+
+##Extra, Extra, Read All About It
 [**Google Docs Pitch Deck**](https://docs.google.com/presentation/d/1TJdsWpqXyN9X_6IBwjJ95oObiH0mwf_7xueDqma3jkw/edit#slide=id.gcb9a0b074_1_0)  
 
 [**Trello Board**](https://trello.com/b/805Ec9Hv/free-time-fixer)
 
 <hr>
-## Icebox
+##Icebox
 - Ability to set an activity to "done" once it's been completed (ie: a show has been watched).
 - Ability to use the site to have a public, random activity suggested to me, even if I don't have an account.
 - Ablility to toggle between private created and public activities.
