@@ -8,7 +8,7 @@ Hello from team **Skeletonic**. In a world of increasing distractions, complicat
 >  [**Keenan Hillerbrand**](https://github.com/khillerb) 
 Python Prince
 
-> [**Stephanie Rinehart**](https://github.com/cbmacd1213/) 
+> [**Stephanie Rinehart**](https://github.com/mlisdev/ß) 
 Scrum Master, Designer
 
 
